@@ -9,6 +9,7 @@ def parametrized_decor(parameter):
             with open(path, 'a', encoding="utf-8") as f:
                 f.write(f'Имя функции: {foo.__name__}\n{date}\nАргументы: {args}\nРезультат:{result1}\n')
                 f.close()
+            return result1
         return new_foo
     return decor
 
